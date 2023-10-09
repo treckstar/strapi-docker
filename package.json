@@ -1,7 +1,7 @@
 {
-  "name": "strapi-docker",
+  "name": "@treckstar/strapi-docker",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
@@ -15,6 +15,7 @@
     "@strapi/plugin-documentation": "^4.10.5",
     "@strapi/plugin-graphql": "^4.10.0",
     "@strapi/plugin-i18n": "^4.10.0",
+    "@strapi/plugin-seo": "^1.9.5",
     "@strapi/plugin-users-permissions": "^4.10.0",
     "@strapi/provider-email-nodemailer": "^4.10.0",
     "@strapi/strapi": "^4.10.0",
@@ -32,7 +33,7 @@
     "uuid": "b7cb0ca2-f352-41bb-9a54-aafaedde3dbe"
   },
   "engines": {
-    "node": ">=16.0.0 <=20.x.x",
+    "node": ">=16.0.0 <=18.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
