@@ -1,10 +1,36 @@
 module.exports = [
-  'strapi::errors',
-  'strapi::security',
-  'strapi::cors',
-  'strapi::poweredBy',
-  'strapi::logger',
-  'strapi::query',
+  "strapi::errors",
+  {
+    name: "strapi::security",
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+
+        directives: {
+          "connect-src": ["'self'", "https:"],
+          "img-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            "https://loremflickr.com/",
+            "res.cloudinary.com",
+          ],
+          "media-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            "res.cloudinary.com",
+            "res.cloudinary.com",
+          ],
+          upgradeInsecureRequests: null,
+        },
+      },
+    },
+  },
+  "strapi::cors",
+  "strapi::poweredBy",
+  "strapi::logger",
+  "strapi::query",
   {
     name: "strapi::body",
     config: {
@@ -16,7 +42,7 @@ module.exports = [
       },
     },
   },
-  'strapi::session',
-  'strapi::favicon',
-  'strapi::public',
+  "strapi::session",
+  "strapi::favicon",
+  "strapi::public",
 ];

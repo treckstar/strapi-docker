@@ -1,7 +1,7 @@
 {
   "name": "@treckstar/strapi-docker",
   "private": true,
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
@@ -18,12 +18,14 @@
     "@strapi/plugin-seo": "^1.9.5",
     "@strapi/plugin-users-permissions": "^4.10.0",
     "@strapi/provider-email-nodemailer": "^4.10.0",
+    "@strapi/provider-upload-cloudinary": "^4.14.3",
     "@strapi/strapi": "^4.10.0",
     "better-sqlite3": "8.6.0",
     "fs-extra": "^10.0.0",
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
     "pg": "^8.11.3",
+    "strapi-plugin-generate-data": "^1.0.28",
     "strapi-plugin-navigation": "^2.2.8"
   },
   "author": {
