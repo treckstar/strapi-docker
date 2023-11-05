@@ -1,0 +1,24 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "2.2.4",
+    "title": "DOCUMENTATION",
+    "termsOfService": "https://treckstar.net/privacy",
+    "contact": {
+      "name": "Brandon Trecki",
+      "email": "treckstar@twitter.com",
+      "url": "https://treckstar.net"
+    },
+    "servers": [
+      {
+        "url": "https://strapi.has.aggressivecache.com/api",
+        "description": "Production server"
+      }
+    ],
+    "security": [
+      {
+        "bearerAuth": []
+      }
+    ]
+  }
+}
