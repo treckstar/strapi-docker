@@ -1,3 +1,16 @@
+const directives = [
+  "'self'",
+  'data:',
+  'blob:',
+  'loremflickr.com', // lorem picsum
+  'images.unsplash.com', // unsplash
+  'res.cloudinary.com', // cloudinary images
+  'lh3.googleusercontent.com', // google avatars
+  'platform-lookaside.fbsbx.com', // facebook avatars
+  'dl.airtable.com', // strapi marketplace
+  'market-assets.strapi.io' // strapi marketplace
+];
+
 module.exports = [
   "strapi::errors",
   {
@@ -7,19 +20,8 @@ module.exports = [
         useDefaults: true,
         directives: {
           'connect-src': ["'self'", 'https:'],
-          'img-src': [
-            "'self'",
-            'data:',
-            'blob:',
-            'loremflickr.com', // lorem picsum
-            'images.unsplash.com', // unsplash
-            'res.cloudinary.com', // cloudinary images
-            'lh3.googleusercontent.com', // google avatars
-            'platform-lookaside.fbsbx.com', // facebook avatars
-            'dl.airtable.com', // strapi marketplace
-            'market-assets.strapi.io' // strapi marketplace
-          ],
-          'media-src': ["'self'", 'data:', 'blob:'],
+          'img-src': directives,
+          'media-src': directives,
           upgradeInsecureRequests: null,
         },
       },
