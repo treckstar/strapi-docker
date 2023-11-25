@@ -1,27 +1,25 @@
 module.exports = [
   "strapi::errors",
   {
-    name: "strapi::security",
+    name: 'strapi::security',
     config: {
       contentSecurityPolicy: {
         useDefaults: true,
-
         directives: {
-          "connect-src": ["'self'", "https:"],
-          "img-src": [
+          'connect-src': ["'self'", 'https:'],
+          'img-src': [
             "'self'",
-            "data:",
-            "blob:",
-            "loremflickr.com",
-            "res.cloudinary.com",
+            'data:',
+            'blob:',
+            'loremflickr.com', // lorem picsum
+            'images.unsplash.com', // unsplash
+            'res.cloudinary.com', // cloudinary images
+            'lh3.googleusercontent.com', // google avatars
+            'platform-lookaside.fbsbx.com', // facebook avatars
+            'dl.airtable.com', // strapi marketplace
+            'market-assets.strapi.io' // strapi marketplace
           ],
-          "media-src": [
-            "'self'",
-            "data:",
-            "blob:",
-            "loremflickr.com",
-            "res.cloudinary.com",
-          ],
+          'media-src': ["'self'", 'data:', 'blob:'],
           upgradeInsecureRequests: null,
         },
       },
