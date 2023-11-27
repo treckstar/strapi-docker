@@ -8,10 +8,12 @@
     "start": "strapi start",
     "build": "strapi build",
     "seed": "strapi import -f seed-data.tar.gz",
+    "export": "strapi export --no-encrypt -f seed-data",
     "strapi": "strapi"
   },
   "devDependencies": {},
   "dependencies": {
+    "@strapi/plugin-color-picker": "^4.15.4",
     "@strapi/plugin-documentation": "^4.15.4",
     "@strapi/plugin-graphql": "^4.15.4",
     "@strapi/plugin-i18n": "^4.15.4",
@@ -30,6 +32,7 @@
     "react-router-dom": "^5.3.4",
     "strapi-plugin-generate-data": "^1.0.30",
     "strapi-plugin-navigation": "^2.3.1",
+    "strapi-plugin-tagsinput": "^1.0.1",
     "styled-components": "^5.3.11"
   },
   "author": {
