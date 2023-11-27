@@ -19,6 +19,12 @@
     "text": {
       "type": "string",
       "required": true
+    },
+    "icon": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

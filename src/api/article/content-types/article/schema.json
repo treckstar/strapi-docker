@@ -34,7 +34,7 @@
         }
       }
     },
-    "slug": {
+    "uid": {
       "type": "uid",
       "targetField": "title"
     },
@@ -89,6 +89,16 @@
           "localized": true
         }
       }
+    },
+    "path": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true,
+      "maxLength": 255
     }
   }
 }

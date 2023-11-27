@@ -23,7 +23,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true
     },
     "contentSections": {
       "type": "dynamiczone",
@@ -53,7 +54,9 @@
         }
       },
       "type": "string",
-      "regex": "^$|^[a-zA-Z/-]+$"
+      "regex": "^$|^[a-zA-Z/-]+$",
+      "required": true,
+      "maxLength": 255
     },
     "heading": {
       "pluginOptions": {
@@ -80,6 +83,15 @@
         }
       },
       "component": "shared.seo"
+    },
+    "uid": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "uid",
+      "targetField": "shortName"
     }
   }
 }
